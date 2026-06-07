@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # QSAR Bioactivity Pipeline (ECFP vs MACCS, RF vs XGBoost)
 
 End-to-end QSAR pipeline for binary bioactivity prediction, built in Python with RDKit and scikit-learn.  
@@ -74,3 +75,7 @@ your-repo/
 │   └── triage.py                  # hit triage ranking (top-N)
 ├── requirements.txt
 └── README.md
+=======
+# qsar-bioactivity-pipeline
+Cheminformatics QSAR workflow for bioactivity prediction with RDKit, machine learning, and compound prioritization.
+>>>>>>> b2ea66e81e0203fb8e3c5b5804f4d784e8dacc61
