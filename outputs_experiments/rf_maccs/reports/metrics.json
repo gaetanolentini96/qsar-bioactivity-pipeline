@@ -1,0 +1,14 @@
+{
+  "rep": "maccs",
+  "model": "rf",
+  "roc_auc": 0.0,
+  "pr_auc": 0.5,
+  "brier": 0.3155562499999999,
+  "threshold": 0.5,
+  "tn_fp_fn_tp": [
+    1,
+    0,
+    1,
+    0
+  ]
+}

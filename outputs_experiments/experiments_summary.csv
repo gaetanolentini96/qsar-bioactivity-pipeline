@@ -1,0 +1,5 @@
+run_dir,rep,model,roc_auc,pr_auc,brier,threshold,tn_fp_fn_tp
+outputs_experiments\rf_morgan,morgan,rf,0.0,0.5,0.32037812499999996,0.5,"[1, 0, 1, 0]"
+outputs_experiments\xgb_morgan,morgan,xgb,0.5,0.5,0.250192984211683,0.5,"[0, 1, 0, 1]"
+outputs_experiments\rf_maccs,maccs,rf,0.0,0.5,0.3155562499999999,0.5,"[1, 0, 1, 0]"
+outputs_experiments\xgb_maccs,maccs,xgb,0.5,0.5,0.2500011242509892,0.5,"[0, 1, 0, 1]"
