@@ -1,4 +1,4 @@
-﻿# QSAR Bioactivity Pipeline (ECFP vs MACCS, RF vs XGBoost)
+# QSAR Bioactivity Pipeline (ECFP vs MACCS, RF vs XGBoost)
 
 End-to-end QSAR pipeline for binary bioactivity prediction, built in Python with RDKit and scikit-learn.
 It compares different molecular representations and models, handles class imbalance, and demonstrates a realistic hit triage use case.
@@ -35,6 +35,6 @@ your-repo/
 ### Best Model Performance (RF Morgan)
 Qui sotto puoi vedere i grafici aggiornati generati dalla pipeline con la soglia ottimizzata a 0.15:
 
-![ROC Curve](outputs_experiments/rf_morgan/reports/roc.png)
-![Precision-Recall Curve](outputs_experiments/rf_morgan/reports/pr.png)
-![Confusion Matrix](outputs_experiments/rf_morgan/reports/confusion.png)
+![ROC Curve](outputs_experiments/rf_morgan/reports/roc_v2.png)
+![Precision-Recall Curve](outputs_experiments/rf_morgan/reports/pr_v2.png)
+![Confusion Matrix](outputs_experiments/rf_morgan/reports/confusion_v2.png)
