@@ -1,4 +1,4 @@
-himport os
+import os
 import json
 import argparse
 from itertools import product
@@ -62,7 +62,7 @@ def run_single(
 
     # --- evaluation ---
     y_prob = positive_proba(clf, X_test, pos_label=1)
-    metrics = evl.classification_metrics(y_test, y_prob, threshold=0.5)
+    metrics = evl.classification_metrics(y_test, y_prob, threshold=0.15)
     (fpr, tpr, _), (prec, rec, _) = evl.curves(y_test, y_prob)
     prob_true, prob_pred = evl.calibration_points(y_test, y_prob)
 

@@ -4,7 +4,7 @@
   "roc_auc": 0.5,
   "pr_auc": 0.5,
   "brier": 0.2500011242509892,
-  "threshold": 0.5,
+  "threshold": 0.15,
   "tn_fp_fn_tp": [
     0,
     1,
