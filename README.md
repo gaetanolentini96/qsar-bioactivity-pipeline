@@ -37,4 +37,4 @@ Qui sotto puoi vedere i grafici aggiornati generati dalla pipeline con la soglia
 
 ![ROC Curve](outputs_experiments/rf_morgan/reports/roc_v2.png)
 ![Precision-Recall Curve](outputs_experiments/rf_morgan/reports/pr_v2.png)
-![Confusion Matrix](outputs_experiments/rf_morgan/reports/confusion_v2.png)
+![Confusion Matrix](outputs_experiments/rf_maccs/reports/confusion_v3.png)
