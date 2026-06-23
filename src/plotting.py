@@ -46,7 +46,7 @@ def plot_confusion_matrix(tn, fp, fn, tp, out_png: str):
             plt.text(j, i, str(cm[i, j]), ha="center", va="center")
     plt.xticks([0, 1], ["Pred 0", "Pred 1"])
     plt.yticks([0, 1], ["True 0", "True 1"])
-    plt.title("Confusion Matrix @0.5")
+    plt.title("Confusion Matrix @0.15")
     plt.colorbar()
     plt.savefig(out_png, bbox_inches="tight", dpi=200)
     plt.close()
