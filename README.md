@@ -2,7 +2,7 @@
 
 An end-to-end Quantitative Structure-Activity Relationship (QSAR) pipeline for binary bioactivity prediction, built in Python using **RDKit** and **scikit-learn**. 
 
-This production-grade pipeline benchmarks multiple molecular representations against different machine learning architectures, handles severe class imbalance via calibrated probability thresholds, and simulates a realistic hit triage screening workflow. It was designed to demonstrate industry-standard cheminformatics and engineering practices.
+This reproducible pipeline benchmarks multiple molecular representations and machine learning architectures for bioactivity prediction. It supports workflows involving imbalanced bioactivity datasets through probability calibration and decision-threshold optimization, simulating a realistic hit triage scenario. It was designed to demonstrate common cheminformatics and software engineering practices used in early-stage drug discovery.
 
 ## 🔍 Features
 
@@ -33,10 +33,10 @@ qsar-pipeline/
 ## 📊 Benchmarking & Evaluation
 
 ### Best Performing Architecture: Random Forest + MACCS Keys (`rf_maccs`)
-Following an exhaustive search across representations and architectures, the **Random Forest trained on MACCS Keys** emerged as the superior model, demonstrating outstanding discriminative power on highly imbalanced assay data.
+Following an exhaustive comparison across molecular representations and machine learning architectures, the Random Forest trained on MACCS Keys achieved the best performance among the evaluated configurations.
 
 * **ROC-AUC**: `0.875` (Excellent ability to correctly rank active compounds over inactives)
-* **PR-AUC**: `0.833` (High precision maintained despite severe class sifting)
+* **PR-AUC**: `0.833` (High precision-recall performance on the evaluation dataset)
 * **Brier Score**: `0.129` (Indicates highly reliable, well-calibrated probability estimates)
 
 ---
@@ -60,4 +60,4 @@ In primary virtual screening campaigns, missing a true active lead (**False Nega
 
 **Key Scientific Takeaways from the Triage Matrix:**
 * **Zero False Negatives ($FN = 0$):** The model achieved **100% Sensitivity (Recall)** on the test set, successfully recovering every single active molecule.
-* **Balanced False Positives ($FP = 2$):** A minimal overhead of 2 false alarms is an exceptionally profitable trade-off in industrial workflows, ensuring no blockbuster drug candidate is discarded during high-throughput screening.
+* **Balanced False Positives ($FP = 2$):** A minimal overhead of two false positives represents a favorable trade-off in industrial screening workflows, reducing the probability of discarding potentially active compounds during early virtual screening.
