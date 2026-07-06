@@ -10,7 +10,7 @@ This reproducible pipeline benchmarks multiple molecular representations and mac
 * **Molecular Featurization (RDKit)**: Extracts topological information using both circular fingerprints (ECFP-like Morgan Fingerprints, 2048-bit) and structural keys (MACCS keys, 167-bit).
 * **Robust Modeling**: Combines Random Forest classification (utilizing cost-sensitive learning via `class_weight='balanced'`) and XGBoost architectures.
 * **Advanced Evaluation Metrics**: Goes beyond simple accuracy by monitoring ROC-AUC, PR-AUC, and Brier Score.
-* **Decision Threshold Optimization**: Implements a custom decision threshold (@ 0.15) optimized to maximize sensitivity and capture all active hits in imbalanced screening scenarios.
+* **Decision Threshold Optimization**: Implements a custom decision threshold (0.15) optimized to maximize sensitivity and capture all active hits in imbalanced screening scenarios.
 * **Hit Triage & Lead Identification**: Ranks virtual screening candidates by predicted probability of bioactivity and exports the top-N leads for downstream biological validation.
 
 ## 📂 Project Structure
